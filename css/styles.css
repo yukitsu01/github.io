@@ -1,0 +1,20 @@
+@charset "utf-8";
+body{
+  margin: 0;
+}
+header{
+  background-image: url(../img/background01.jpg);
+  background-size: 8%;
+  height: 550px;
+  width: 100%;
+
+  /* transition: transform .8s 1s ,background;  */
+}
+header h1{
+  text-align: center;
+  margin: 0;
+  padding: 270px 0;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  font-size: 3rem;
+  color: pink;
+}
