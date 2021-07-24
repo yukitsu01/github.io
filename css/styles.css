@@ -1,20 +1,75 @@
 @charset "utf-8";
 body{
   margin: 0;
+  max-width: 100%;
 }
 header{
   background-image: url(../img/background01.jpg);
   background-size: 8%;
   height: 550px;
   width: 100%;
+  position: relatibe;
 
   /* transition: transform .8s 1s ,background;  */
 }
 header h1{
+  width: 600px;
+  height: 64px;
   text-align: center;
-  margin: 0;
-  padding: 270px 0;
+  /* padding: 270px 0; */
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   font-size: 3rem;
   color: pink;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, .8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.container{
+  margin: 64px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.container dl{
+  line-height: 2rem;
+}
+.prf-img{
+  width: 200px;
+  height: 300px;
+  margin-right: 40px;
+  object-fit: cover;
+  /* object-position: "top" "50%"; */
+}
+section ul{
+  list-style: none;
+  text-align: right;
+  position: relative;
+  left: 120px;
+  bottom: 64px;
+}
+section li{
+  height: 32px;
+  width: 200px;
+  border-bottom: 1px solid pink;
+  padding-top: 8px;
+}
+li a{
+  background: #fff;
+  text-decoration: none;
+  color: #000;
+}
+li a:hover{
+  color: skyblue;
+}
+
+/* footer---------------------------- */
+footer{
+  background: #f9fabb;
+  height: 64px;
+  text-align: center;
+  padding-top: 38px;
 }
