@@ -14,7 +14,7 @@ header{
   /* transition: transform .8s 1s ,background;  */
 }
 header h1,.title{
-  width: 750px;
+  width: fit-content;
   height: 64px;
   text-align: center;
   margin: 0;
@@ -35,6 +35,17 @@ header h1,.title{
   top: 150px;
   height: 40px;
   font-size: 1.5rem;
+  width: fit-content;
+}
+.page-title{
+  width: fit-content;
+  border-bottom: 4px solid #565656;
+  /* margin-left: 40px; */
+  letter-spacing: 1rem;
+  font-family: 'Amatic SC', cursive, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+main > section{
+  margin-left: 80px;
 }
 .container{
   margin: 64px auto;
