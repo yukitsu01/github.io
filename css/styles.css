@@ -46,7 +46,7 @@ header h1,.title{
 }
 main > section{
   margin: 0 80px;
-  width: 80%
+  width: 80%;
 }
 .container{
   margin: 16px auto;
@@ -58,6 +58,9 @@ main > section{
 .container dl{
   line-height: 2rem;
   letter-spacing: 1rem;
+}
+.container dt{
+  background: #f9fabb;
 }
 .prf-img{
   width: 300px;
@@ -89,7 +92,7 @@ li a:hover{
   color: skyblue;
 }
 .attention{
-  width: 60%;
+  width: 100%;
   border: 2px solid red;
   border-radius: 4px;
   background-color: #fdfafa;
@@ -120,6 +123,42 @@ li a:hover{
 .attention span{
   color: #000;
 }
+.column{
+  display: flex;
+  margin-top: 100px;
+}
+aside{
+  width: 35%;
+  margin-right: 40px;
+}
+.side-area{
+  border: 7px solid #e1e7fb;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+aside h2{
+  text-align: center;
+}
+aside h3{
+  /* border-bottom: 2px solid #565656; */
+  font-weight: bold;
+  letter-spacing: .8rem;
+  font-family: 'Amatic SC', cursive, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  padding-left: 7px;
+}
+aside ol{
+  list-style: circle;
+}
+aside li{
+  height: 32px;
+  width: 250px;
+  /* border-bottom: 1px solid pink; */
+  padding-top: 10px;
+  letter-spacing: .4rem;
+}
+aside li:hover{
+  cursor: pointer;
+}
 footer{
   background: #f9fabb;
   height: 64px;
@@ -136,10 +175,14 @@ footer{
   }
   header h1{
     width: 300px;
-    height: 150px;
+    height: 100px;
+    font-size: 32px;
     font-weight: normal;
   }
   .prf-img{
     width: 100%;
+  }
+  .container dl{
+    flex-direction: column;
   }
 }
