@@ -1,8 +1,16 @@
 @charset "utf-8";
+/* @media screen and (min-width: 481px){ */
+
+  /* 共通部分 */
+  /* 共通部分 */
+  /* 共通部分 */
 body{
   margin: 0;
   max-width: 100%;
 }
+/* ヘッダー */
+/* ヘッダー */
+/* ヘッダー */
 header{
   background-image: url(../img/background01.jpg);
   background-size: 32px;
@@ -10,8 +18,6 @@ header{
   object-fit: cover;
   width: 100%;
   position: relative;
-
-  /* transition: transform .8s 1s ,background;  */
 }
 header h1,.title{
   width: fit-content;
@@ -44,6 +50,9 @@ header h1,.title{
   letter-spacing: 1rem;
   font-family: 'Amatic SC', cursive, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
 }
+/* メイン */
+/* メイン */
+/* メイン */
 main > section{
   margin: 0 80px;
   width: 80%;
@@ -67,6 +76,7 @@ main > section{
   height: 300px;
   margin-right: 40px;
   object-fit: cover;
+  border-radius: 4px;
 }
 section ul{
   list-style: none;
@@ -123,6 +133,9 @@ li a:hover{
 .attention span{
   color: #000;
 }
+/* サイドバー */
+/* サイドバー */
+/* サイドバー */
 .column{
   display: flex;
   margin-top: 100px;
@@ -135,6 +148,38 @@ aside{
   border: 7px solid #e1e7fb;
   border-radius: 4px;
   margin-bottom: 24px;
+}
+.side-area img{
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.side-area p{
+  line-height: 1.2rem;
+  letter-spacing: .2rem;
+  width: 280px;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 60px;
+  font-size: smaller;
+}
+.read-more{
+  width: 250px;
+  text-align: center;
+  margin-left: 22px;
+  margin-bottom: 20px;
+  background: #fff;
+  color: #e1e7fb;
+  border: 1px solid #565656;
+  border-radius: 8px;
+}
+.read-more a{
+  text-decoration: none;
+  display: block;
+}
+.read-more:hover{
+  background: #e1e7fb;
 }
 aside h2{
   text-align: center;
@@ -159,16 +204,22 @@ aside li{
 aside li:hover{
   cursor: pointer;
 }
+/* フッター */
+/* フッター */
+/* フッター */
 footer{
   background: #f9fabb;
   height: 64px;
   text-align: center;
   padding-top: 38px;
 }
+/* } */
 
 /* モバイル版 */
+/* モバイル版 */
+/* モバイル版 */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 480px) {
   header{
     width: 100%;
     height: 300px;
@@ -179,10 +230,80 @@ footer{
     font-size: 32px;
     font-weight: normal;
   }
-  .prf-img{
+  .column{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container{
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  main section{
     width: 100%;
+  }
+  aside{
+    width: 90%;
+    margin-left: 37px;
+  }
+  .page-title{
+    margin-left: 220px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .prf-img{
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 98px;
   }
   .container dl{
     flex-direction: column;
+    width: 300px;
+    text-align: center;
+    margin-left: 150px;
+  }
+  .container dd{
+    margin: 0;
+    font-size: small;
+    letter-spacing: .2rem;
+  }
+  section ul{
+    top: -140px;
+    margin-top: 40px;
+    margin-left: 90px;
+    text-align: center;
+  }
+  section li{
+    height: 24px;
+  }
+  #wrap{
+    margin-left: 165px;
+  }
+  .attention{
+    max-width: 320px;
+    height: 160px;
+    margin-left: 130px;
+  }
+  .attention > p{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .attention ul{
+    width: 280px;
+    margin: 0 auto;
+  }
+  .attention li{
+    letter-spacing: .3rem;
+    line-height: 1.5rem;
+    font-size: small;
+  }
+  .wrap-li{
+    margin-bottom: 20px;
+  }
+  .side-area img{
+    margin-left: 12px;
+  }
+  .read-more{
+    margin-left: 37px;
   }
 }
