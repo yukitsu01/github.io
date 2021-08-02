@@ -274,14 +274,17 @@ footer{
     text-align: center;
   }
   section li{
-    height: 24px;
+    height: 32px;
+    border: 2px solid pink;
+    border-radius: 8px;
+    margin-top: 1px; 
   }
   #wrap{
     margin-left: 165px;
   }
   .attention{
     max-width: 320px;
-    height: 160px;
+    height: 170px;
     margin-left: 130px;
   }
   .attention > p{
@@ -296,6 +299,7 @@ footer{
     letter-spacing: .3rem;
     line-height: 1.5rem;
     font-size: small;
+    border: initial;
   }
   .wrap-li{
     margin-bottom: 20px;
@@ -305,5 +309,10 @@ footer{
   }
   .read-more{
     margin-left: 37px;
+    height: 32px;
+    font-size: 1.4rem;
+  }
+  aside h3{
+    text-align: center;
   }
 }
